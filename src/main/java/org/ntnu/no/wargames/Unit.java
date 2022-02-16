@@ -11,6 +11,7 @@ public abstract class Unit {
     private int armor;
     private int attack;
     private int test;
+    private int test2;
 
     protected Unit(String name, int health, int armor, int attack){
         this.name = name;
