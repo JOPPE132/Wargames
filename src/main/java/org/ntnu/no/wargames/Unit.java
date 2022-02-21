@@ -10,17 +10,16 @@ public abstract class Unit {
     private int health;
     private int armor;
     private int attack;
-    private int test;
-    private int test2;
 
     protected Unit(String name, int health, int armor, int attack){
         this.name = name;
         this.health = health;
         this.armor = armor;
         this.attack = attack;
-
-
     }
+
+    abstract int getResistBonus();
+    abstract int getAttackBonus();
 
     public String getName(){
         return name;
@@ -42,9 +41,4 @@ public abstract class Unit {
         this.health = newHealth;
     }
 
-    public int getAttackBonus(){
-    }
-
-    public int getResistBonus(){
-    }
 }
